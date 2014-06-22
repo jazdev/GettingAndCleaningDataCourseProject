@@ -52,7 +52,6 @@ dataset <- data[, c(columns, "subject", "activity")]
 
 ## Find average of each variable for each activity and each subject
 
-vars <- !names(dataset) %in% c("subject", "activity")
 dataset.long <- melt(dataset, id=c("subject", "activity"))
 subject_activity.mean <- dcast(dataset.long, subject + activity ~ variable, mean)
 
