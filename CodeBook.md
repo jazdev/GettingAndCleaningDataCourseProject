@@ -109,7 +109,7 @@ subject_activity.mean <- dcast(dataset.long, subject + activity ~ variable, mean
 
 Finaly the desired means are written to a file on the disk using the `write.csv` function. 
 
-The data is saved in the file `ubject_activity_means.txt` located in the `tidy data` directory. 
+The data is saved in the file `subject_activity_means.txt` located in the `tidy data` directory. 
 
 ```
 dir.create("tidy data", showWarnings=FALSE)
