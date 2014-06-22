@@ -6,7 +6,7 @@ library(reshape2)
 ## in the currect working directory.
 
 feature_names <- read.table("UCI HAR Dataset/features.txt", header=FALSE)
-activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header=)
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", header=FALSE)
 
 train <- read.table("UCI HAR Dataset/train/X_train.txt", header=FALSE)
 train_subj <- read.table("UCI HAR Dataset/train/subject_train.txt", header=FALSE)
