@@ -105,7 +105,7 @@ dataset.long <- melt(dataset, id=c("subject", "activity"))
 subject_activity.mean <- dcast(dataset.long, subject + activity ~ variable, mean)
 ```
 
-#### Write the data to a file on disk
+#### 6. Write the data to a file on disk
 
 Finaly the desired means are written to a file on the disk using the `write.csv` function. 
 
